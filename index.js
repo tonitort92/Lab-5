@@ -1,5 +1,5 @@
-let hacker1= "David";
-let hacker2= "Mar";
+let hacker1= "Eustaquio";
+let hacker2= "Anselmo";
 i=0;
 j=hacker2.length -1;
 k=0;
@@ -9,17 +9,17 @@ etWords=0;
 console.log("The driver's name is " + hacker1);
 console.log("The navigator's name is " + hacker2);
 
-if(hacker2.length < hacker1.length){
+if(hacker1.length > hacker2.length){
 
     console.log( hacker1 +", the driver, has the longest name with " + hacker1.length +" characters.");
 
 }
 
 if (hacker1.length < hacker2.length){
-    console.log("It seems that the navigator has the longest name, it has " + hacker2.length );
+    console.log("It seems that the navigator has the longest name, it has " + hacker2.length + "characters." );
 }
 
-else{
+if(hacker1.length == hacker2.length){
     console.log("Wow, you both have equally long names," + hacker2.length + " characters!");
 }
 
@@ -34,7 +34,8 @@ while(j >= 0){
     j--;
 }
 
-if(hacker1 == hacker2){
+
+if(hacker1 === hacker2){
     console.log("What?! Do you have the same name?!");
 }
 
